@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meche's Tutoring</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f0f8f4;
+      color: #2d3e2e;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #2e7d32; /* dark green */
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Book Images Section */
+    .book-images {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .book-card {
+      flex: 1 1 30%;
+      text-align: center;
+      background-color: #ffffff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 64, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .book-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .book-card p {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #4e6b50;
+    }
+
+    /* Availability info under description */
+    .availability-box {
+      margin-top: 10px;
+      width: 100%;
+      font-size: 0.85rem;
+      color: #2d3e2e;
+      text-align: left;
+    }
+
+    .availability-box label {
+      display: block;
+      margin-top: 6px;
+      font-weight: 600;
+    }
+
+    .availability-box select,
+    .availability-box input[type="checkbox"] {
+      margin-top: 4px;
+      font-size: 0.85rem;
+    }
+
+    /* Notes for Instructor Full Width */
+    .notes-section {
+      max-width: 1200px;
+      margin: 0 auto 40px;
+      background-color: #ffffff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 100, 0, 0.05);
+    }
+
+    .notes-section label {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .notes-section textarea {
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid #b2dfdb;
+      padding: 10px;
+      font-size: 1rem;
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .notes-section button {
+      margin-top: 15px;
+      padding: 10px 15px;
+      background: #388e3c;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .notes-section button:hover {
+      background-color: #2e7d32;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      background-color: #2e7d32;
+      color: white;
+      padding: 20px;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .book-images {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .book-card {
+        max-width: 80%;
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Meche's Tutoring</h1>
+    <p>Personalized Learning for Every Student</p>
+  </header>
+
+  <main class="container">
+    <section class="book-images">
+      <div class="book-card">
+        <img src="https://via.placeholder.com/200x250?text=Book+1" alt="Book 1" />
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed est eu lorem commodo varius.</p>
+        <div class="availability-box">
+          <label for="timeSlot1">Select a Time Slot:</label>
+          <select id="timeSlot1" name="timeSlot1" required>
+            <option value="">--Choose a time--</option>
+            <option value="5:00">5:00 PM</option>
+            <option value="5:30">5:30 PM</option>
+            <option value="6:00">6:00 PM</option>
+            <option value="6:30">6:30 PM</option>
+            <option value="7:00">7:00 PM</option>
+            <option value="7:30">7:30 PM</option>
+          </select>
+
+          <label><input type="checkbox" name="readingLevel1" /> Reading Level Available</label>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <img src="https://via.placeholder.com/200x250?text=Book+2" alt="Book 2" />
+        <p>Aliquam erat volutpat. Sed luctus sapien ut lectus sollicitudin, non congue augue imperdiet.</p>
+        <div class="availability-box">
+          <label for="timeSlot2">Select a Time Slot:</label>
+          <select id="timeSlot2" name="timeSlot2" required>
+            <option value="">--Choose a time--</option>
+            <option value="5:00">5:00 PM</option>
+            <option value="5:30">5:30 PM</option>
+            <option value="6:00">6:00 PM</option>
+            <option value="6:30">6:30 PM</option>
+            <option value="7:00">7:00 PM</option>
+            <option value="7:30">7:30 PM</option>
+          </select>
+
+          <label><input type="checkbox" name="readingLevel2" /> Reading Level Available</label>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <img src="https://via.placeholder.com/200x250?text=Book+3" alt="Book 3" />
+        <p>Ut dapibus nunc ac sapien sagittis, a porta ex convallis. Suspendisse imperdiet lacus ac mauris.</p>
+        <div class="availability-box">
+          <label for="timeSlot3">Select a Time Slot:</label>
+          <select id="timeSlot3" name="timeSlot3" required>
+            <option value="">--Choose a time--</option>
+            <option value="5:00">5:00 PM</option>
+            <option value="5:30">5:30 PM</option>
+            <option value="6:00">6:00 PM</option>
+            <option value="6:30">6:30 PM</option>
+            <option value="7:00">7:00 PM</option>
+            <option value="7:30">7:30 PM</option>
+          </select>
+
+          <label><input type="checkbox" name="readingLevel3" /> Reading Level Available</label>
+        </div>
+      </div>
+    </section>
+
+    <section class="notes-section">
+      <form action="/submit-notes" method="POST">
+        <label for="notes">Notes for Instructor:</label>
+        <textarea id="notes" name="notes" rows="4" placeholder="Any special instructions or requests..."></textarea>
+        <button type="submit">Submit Notes</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Meche's Tutoring. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
